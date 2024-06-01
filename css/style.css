@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+main#playground {
+  margin: 15px auto;
+  width: 45vw;
+  text-align: center;
+  position: relative;
+}
+
+div.cell {
+  width: 15vw;
+  height: 15vw;
+  min-height: 50px;
+  min-width: 50px;
+  display: inline-block;
+  margin: 3px;
+  border: 0px solid white;
+  box-sizing: border-box;
+  transition: border ease 0.1s;
+  cursor: pointer;
+}
+
+button#go {
+  display: block;
+  width: 15vw;
+  font-size: 2em;
+  height: 10vh;
+  background-color: #ccc;
+  border: none;
+  margin: 0vh auto 3vh auto;
+  cursor: pointer;
+}
+
+div#message {
+  text-align: center;
+  font-size: 2em;
+}
+
+.security {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: unset;
+  z-index: 3;
+}
+
+.visible {
+  display: block;
+}
